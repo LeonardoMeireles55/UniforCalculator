@@ -1,6 +1,6 @@
 package org.example.enums;
 
-///Alyne///
+//Feito por: Alyne.
 
 public enum Sign {
     MULTIPLY("*"),
