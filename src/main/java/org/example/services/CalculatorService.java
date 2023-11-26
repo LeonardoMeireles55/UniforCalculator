@@ -3,7 +3,6 @@ package org.example.services;
 import org.example.enums.Sign;
 
 import java.util.ArrayList;
-//Feito por: leonardo.
 public class CalculatorService {
     private final ArrayList<Double> memory = new ArrayList<>();
 
@@ -20,7 +19,6 @@ public class CalculatorService {
         memory.add(result);
         return result;
     }
-
     public Double getMemory() {
         return new ArrayList<>(memory).stream().reduce(0.0, Double::sum);
     }
