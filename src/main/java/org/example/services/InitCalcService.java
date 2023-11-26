@@ -28,7 +28,7 @@ public class InitCalcService {
 
     public void percentage() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Percentage Calc");
+        System.out.println("Percentage");
         System.out.println("Digite o valor: ");
         double x = scanner.nextDouble();
         System.out.println("Digite o valor da porcentagem:");
@@ -49,8 +49,8 @@ public class InitCalcService {
             String operator = scanner.nextLine().toUpperCase();
             System.out.println(calculatorService.operation(Sign.valueOf(operator), x, y));
 
-            System.out.println("Resultado em memoria ---> " + calculatorService.getMemory());
-            System.out.println("Digite 1 para continuar ou 0 para encerrar:");
+            System.out.println("Resultado em memoria é:" + calculatorService.getMemory());
+            System.out.println("Digite  o numero 1 para continuar ou 0 para encerrar:");
             menu = scanner.nextLine();
         }
     }
