@@ -13,6 +13,8 @@ public class CalculatorService {
             case MULTIPLY -> x * y;
             case DIVISION -> x / y;
             case MODULUS -> x % y;
+            case POWER -> Math.pow(x, y);
+            case ROOT -> Math.pow(x, 1.0 / y);
         };
 
         memory.add(result);
