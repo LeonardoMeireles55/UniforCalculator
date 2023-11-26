@@ -7,7 +7,9 @@ public enum Sign {
     DIVISION("/"),
     SUM("+"),
     MINUS("-"),
-    MODULUS("%");
+    MODULUS("%"),
+    POWER("^"),
+    ROOT("√");
 
     public final String sign;
 
