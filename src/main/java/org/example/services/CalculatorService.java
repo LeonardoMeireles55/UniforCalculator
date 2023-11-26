@@ -5,8 +5,7 @@ import org.example.enums.Sign;
 import java.util.ArrayList;
 public class CalculatorService {
     private final ArrayList<Double> memory = new ArrayList<>();
-
-    //By: Leonardo.
+    
     public Double operation(Sign sign, Double x, Double y) {
         double result = switch (sign) {
             case SUM -> x + y;
