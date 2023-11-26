@@ -20,7 +20,7 @@ public class InitCalcService {
             } else if (opcao == 3) {
                 scanner.close();
             } else {
-                System.out.println("Opcão invalida, tente novamente");
+                System.out.println("Opcão inválida, tente novamente.");
                 scanner.close();
             }
         }
@@ -28,7 +28,7 @@ public class InitCalcService {
 
     public void percentage() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Percentage");
+        System.out.println("Percentagem");
         System.out.println("Digite o valor: ");
         double x = scanner.nextDouble();
         System.out.println("Digite o valor da porcentagem:");
@@ -40,11 +40,11 @@ public class InitCalcService {
         Scanner scanner = new Scanner(System.in);
         String menu = "1";
         while (menu.equals("1")) {
-            System.out.println("Digite o primeiro numero:");
+            System.out.println("Digite o primeiro número:");
             double x = scanner.nextDouble();
-            System.out.println("Digite o segundo numero:");
+            System.out.println("Digite o segundo número:");
             double y = scanner.nextDouble();
-            System.out.println("Escolha uma operação: SUM, MINUS, MULTIPLY, DIVISION, MODULUS");
+            System.out.println("Escolha uma das operações: SUM, MINUS, MULTIPLY, DIVISION, MODULUS, POWER, ROOT");
             scanner.nextLine();
             String operator = scanner.nextLine().toUpperCase();
             System.out.println(calculatorService.operation(Sign.valueOf(operator), x, y));
